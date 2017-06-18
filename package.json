@@ -1,0 +1,17 @@
+{
+  "name": "planet-ark-photo-gallery",
+  "version": "0.0.1",
+  "description": "A static/code generation photo gallery software built for planet ark national tree day.",
+  "main": "index.js",
+  "scripts": {
+    "builder": "node ./node_modules/js-client-boilderplate-nahid/index.js --base $PWD --dist docs --js js/index.js --scss scss/index.scss --static static --command",
+    "build": "npm run builder -- build",
+    "watch": "npm run builder -- watch",
+    "release": "npm run builder -- release"
+  },
+  "author": "Nahid Akbar",
+  "license": "MIT",
+  "dependencies": {
+    "js-client-boilderplate-nahid": "^0.0.5"
+  }
+}
